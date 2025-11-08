@@ -45,11 +45,11 @@ async function renderDetails() {
           ${getFormatBadge(conference.eventFormat, conference.isvirtual)}
         </div>
 
-        <h2>About</h2>
+        <h2>Field of Interest:</h2>
         <p>${conference.about}</p>
 
         ${conference.sponsors ? `
-          <h2>Sponsors</h2>
+          <h2>Sponsors:</h2>
           <p>${conference.sponsors}</p>
         ` : ''}
       </div>
