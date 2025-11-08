@@ -36,7 +36,7 @@ async function renderHome() {
         <div class="badge-container">
           ${getFormatBadge(conf.eventFormat, conf.isvirtual)}
         </div>
-        <p>${truncateText(conf.about, 160)}</p>
+        <p>${truncateText(conf.about, 250)}</p>
         <a href="${conf.url}" class="btn">View Details</a>
       </div>
     `).join('');
