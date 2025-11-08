@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Conferences - IEEE Sri Lanka Section</title>
+  <meta name="description" content="Browse all IEEE Sri Lanka Section conferences. Filter by location, format, and more.">
+  <meta property="og:title" content="All Conferences - IEEE Sri Lanka Section">
+  <meta property="og:description" content="Browse all IEEE Sri Lanka Section conferences.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="header-content">
+      <a href="/" class="logo">IEEE Sri Lanka Section</a>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/conferences.html">Conferences</a></li>
+          <li><a href="/guidelines.html">Guidelines</a></li>
+          <li><a href="/workshops.html">Workshops</a></li>
+          <li><a href="/resources.html">Resources</a></li>
+          <li><a href="/committee.html">Committee</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <h1>All Conferences</h1>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label for="search-input">Search</label>
+        <input type="text" id="search-input" placeholder="Search by title or keywords..." aria-label="Search conferences">
+      </div>
+
+      <div class="filter-group">
+        <label for="sort-select">Sort By</label>
+        <select id="sort-select" aria-label="Sort conferences">
+          <option value="startDate">Start Date</option>
+          <option value="title">Title</option>
+          <option value="city">City</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Country</label>
+        <div class="filter-chips" role="group" aria-label="Filter by country">
+          <button class="chip active" data-filter="country" data-value="">All</button>
+          <button class="chip" data-filter="country" data-value="Sri Lanka">Sri Lanka</button>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <label>Format</label>
+        <div class="filter-chips" role="group" aria-label="Filter by format">
+          <button class="chip active" data-filter="format" data-value="">All</button>
+          <button class="chip" data-filter="format" data-value="hybrid">Hybrid</button>
+          <button class="chip" data-filter="format" data-value="virtual">Virtual</button>
+          <button class="chip" data-filter="format" data-value="in-person">In-Person</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="conf-list"></div>
+
+    <div id="pagination" class="pagination" role="navigation" aria-label="Pagination"></div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; 2025 IEEE Sri Lanka Section. All rights reserved.</p>
+      <p><a href="https://ieee.lk">IEEE Sri Lanka Section Website</a></p>
+      <p>Last updated: January 2025</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/utils.js"></script>
+  <script src="/assets/js/renderers/conferences.js"></script>
+</body>
+</html>

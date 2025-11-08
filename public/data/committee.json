@@ -1,0 +1,36 @@
+{
+  "year": 2025,
+  "composition": [
+    "Present, Elect & Past Section Chairs",
+    "Section Secretary",
+    "Section Treasurer",
+    "Three IEEE Senior Members"
+  ],
+  "members": [
+    {
+      "name": "Prof. S. Vasanthapriyan",
+      "role": "Chair"
+    },
+    {
+      "name": "Prof. Tharaka Samarasinghe"
+    },
+    {
+      "name": "Prof. Buddhika Jayasekara"
+    },
+    {
+      "name": "Prof. Ruwan Gopura"
+    },
+    {
+      "name": "Prof. Roshan Ragel"
+    },
+    {
+      "name": "Prof. Lasith Gunawardene"
+    },
+    {
+      "name": "Dr. Thilini Mahanama"
+    },
+    {
+      "name": "Dr. Damayanthi Herath"
+    }
+  ]
+}

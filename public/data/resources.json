@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Planning basics",
+    "url": "https://events.ieee.org/planning-basics/",
+    "category": "Planning"
+  },
+  {
+    "title": "Online application for conferences",
+    "url": "https://www.ieee.org/conferences/organizers/conf-app.html",
+    "category": "Applications"
+  },
+  {
+    "title": "IEEE Publication Program application",
+    "url": "https://www.ieee.org/conferences/organizers/conference-pub-form.html",
+    "category": "Publications"
+  },
+  {
+    "title": "E-copyright information",
+    "url": "https://www.ieee.org/publications/rights/copyright-main.html",
+    "category": "Publications"
+  },
+  {
+    "title": "Paper templates",
+    "url": "https://www.ieee.org/conferences/publishing/templates.html",
+    "category": "Authors"
+  },
+  {
+    "title": "Conference structure",
+    "url": "https://events.ieee.org/planning-basics/getting-started/assembling-your-committee/",
+    "category": "Planning"
+  },
+  {
+    "title": "Conference timeline",
+    "url": "https://events.ieee.org/organize-an-event/",
+    "category": "Planning"
+  },
+  {
+    "title": "Author guide",
+    "url": "https://conferences.ieeeauthorcenter.ieee.org/write-your-paper/structure-your-paper/",
+    "category": "Authors"
+  }
+]
