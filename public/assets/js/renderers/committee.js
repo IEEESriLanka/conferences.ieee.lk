@@ -15,7 +15,7 @@ async function renderCommittee() {
           </div>
         `).join('')}
       </div>
-      
+      <p>
       <div class="committee-composition">
         <h2>Conference Quality and Management (CQM) Standing Committee</h2>
         <h3>General Composition</h3>
