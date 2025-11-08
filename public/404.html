@@ -7,17 +7,98 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <style>
+        :root {
+          --ieee-blue: #00629B;
+          --accent-blue: #00A3E0;
+          --dark-gray: #4D4F53;
+          --light-gray-bg: #F5F7FA;
+          --white: #FFFFFF;
+          --border-color: #E0E3E8;
+        }
+        
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             min-height: 100vh;
             color: #333;
         }
+        
+        /* Header styles */
+        header {
+          background-color: var(--white);
+          border-bottom: 1px solid var(--border-color);
+          position: sticky;
+          top: 0;
+          z-index: 100;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .header-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 16px 24px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        
+        .logo {
+          font-size: 20px;
+          font-weight: 700;
+          color: var(--ieee-blue);
+          text-decoration: none;
+        }
+        
+        /* Mobile menu toggle button */
+        .menu-toggle {
+          display: none;
+          flex-direction: column;
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 4px;
+          z-index: 101;
+        }
+        
+        .hamburger {
+          width: 25px;
+          height: 3px;
+          background-color: var(--dark-gray);
+          margin: 3px 0;
+          transition: 0.3s;
+          border-radius: 2px;
+        }
+        
+        nav ul {
+          display: flex;
+          list-style: none;
+          gap: 32px;
+        }
+        
+        nav a {
+          color: var(--dark-gray);
+          text-decoration: none;
+          font-weight: 500;
+          transition: color 0.2s;
+        }
+        
+        nav a:hover,
+        nav a:focus {
+          color: var(--ieee-blue);
+          outline: 2px solid var(--accent-blue);
+          outline-offset: 4px;
+        }
+        
         .container {
             text-align: center;
             max-width: 600px;
@@ -25,6 +106,7 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 2rem auto;
         }
         h1 {
             font-size: 3rem;
@@ -54,14 +136,88 @@
             color: #e0e0e0;
             margin: 0;
         }
+        
+        @media (max-width: 768px) {
+          .menu-toggle {
+            display: flex;
+          }
+          
+          nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 70%;
+            background-color: var(--white);
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            z-index: 100;
+          }
+          
+          nav.open {
+            transform: translateX(0);
+          }
+          
+          nav ul {
+            flex-direction: column;
+            gap: 16px;
+            padding: 80px 24px 24px;
+          }
+          
+          .header-content {
+            flex-direction: row;
+            align-items: center;
+            gap: 16px;
+          }
+        }
     </style>
 </head>
 <body>
+    <header>
+      <div class="header-content">
+        <a href="/" class="logo">IEEE Sri Lanka Section</a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+        <nav role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/conferences.html">Conferences</a></li>
+            <li><a href="/guidelines.html">Guidelines</a></li>
+            <li><a href="/workshops.html">Workshops</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+            <li><a href="/committee.html">Committee</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="container">
         <h1>Oops!</h1>
         <p class="error-code">404</p>
         <p>The page you're looking for doesn't exist or has been moved.</p>
         <a href="/" class="btn">Go Back Home</a>
     </div>
+    <script>
+      // Mobile menu toggle functionality
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      
+      menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isOpen);
+        nav.classList.toggle('open');
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', (event) => {
+        if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+          nav.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    </script>
 </body>
 </html>

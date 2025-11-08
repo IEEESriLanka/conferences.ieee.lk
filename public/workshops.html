@@ -16,6 +16,11 @@
   <header>
     <div class="header-content">
       <a href="/" class="logo">IEEE Sri Lanka Section</a>
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
       <nav role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="/">Home</a></li>
@@ -49,5 +54,24 @@
 
   <script src="/assets/js/utils.js"></script>
   <script src="/assets/js/renderers/workshops.js"></script>
+  <script>
+    // Mobile menu toggle functionality
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !isOpen);
+      nav.classList.toggle('open');
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+        nav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
 </body>
 </html>
