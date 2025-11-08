@@ -11,7 +11,103 @@
       "country": "Sri Lanka"
     },
     "sponsors": "Sabaragamuwa University of Sri Lanka; Sri Lanka Section; Sri Lanka Section C Chapter; Sri Lanka Section COM Chapter; Sri Lanka Section EMB Chapter; Sri Lanka Section GRS Chapter; Sri Lanka Section IA Chapter; Sri Lanka Section SP Chapter",
-    "url": "/conf/details.html?id=68737",
+    "url": "/conf/details?id=68737",
+    "isvirtual": "Y",
+    "eventFormat": "hybrid"
+  },
+  {
+    "eventId": 68534,
+    "eventTitle": "2025 9th SLAAI International Conference on Artificial Intelligence (SLAAI-ICAI)",
+    "startDate": "2025-11-19",
+    "endDate": "2025-11-21",
+    "about": "Computing and Processing; Robotics and Control Systems; Signal Processing and Analysis",
+    "location": {
+      "city": "Colombo",
+      "region": "",
+      "country": "Sri Lanka"
+    },
+    "sponsors": "Open University of Sri Lanka; Sri Lanka Association for Artificial Intelligence; Sri Lanka Section",
+    "url": "/conf/details?id=68534",
+    "isvirtual": "Y",
+    "eventFormat": "hybrid"
+  },
+  {
+    "eventId": 69156,
+    "eventTitle": "2025 7th International Conference on Advancements in Computing (ICAC)",
+    "startDate": "2025-12-09",
+    "endDate": "2025-12-10",
+    "about": "Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Robotics and Control Systems",
+    "location": {
+      "city": "Colombo",
+      "region": "",
+      "country": "Sri Lanka"
+    },
+    "sponsors": "Sri Lanka Institute of Information Technology; Sri Lanka Section; Sri Lanka Section C Chapter; Sri Lanka Section COM Chapter; Sri Lanka Section RA Chapter; Sri Lanka Section WIE Affinity Group",
+    "url": "/conf/details?id=69156",
+    "isvirtual": "Y",
+    "eventFormat": "hybrid"
+  },
+  {
+    "eventId": 69413,
+    "eventTitle": "2025 10th International Conference on Information Technology Research (ICITR)",
+    "startDate": "2025-12-08",
+    "endDate": "2025-12-11",
+    "about": "Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineering Profession; General Topics for Engineers; Robotics and Control Systems; Signal Processing and Analysis",
+    "location": {
+      "city": "Colombo",
+      "region": "",
+      "country": "Sri Lanka"
+    },
+    "sponsors": "Information Technology Research Unit, University of Moratuwa, Sri Lanka; Sri Lanka Section",
+    "url": "/conf/details?id=69413",
+    "isvirtual": "N",
+    "eventFormat": "inperson"
+  },
+  {
+    "eventId": 68823,
+    "eventTitle": "2025 International Conference on Advances in Technology and Computing (ICATC)",
+    "startDate": "2025-12-16",
+    "endDate": "2025-12-16",
+    "about": "Bioengineering; Communication, Networking and Broadcast Technologies; Computing and Processing; Engineering Profession; General Topics for Engineers; Power, Energy and Industry Applications; Robotics and Control Systems",
+    "location": {
+      "city": "Kelaniya",
+      "region": "",
+      "country": "Sri Lanka"
+    },
+    "sponsors": "Sri Lanka PES Chapter; Sri Lanka Section; Sri Lanka Section WIE Affinity Group; University of Kelaniya",
+    "url": "/conf/details?id=68823",
+    "isvirtual": "Y",
+    "eventFormat": "hybrid"
+  },
+  {
+    "eventId": 70081,
+    "eventTitle": "2026 IEEE International Research Conference on Smart Computing and Systems Engineering (SCSE)",
+    "startDate": "2026-03-26",
+    "endDate": "2026-03-26",
+    "about": "Bioengineering; Communication, Networking and Broadcast Technologies; Computing and Processing; Engineering Profession; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation",
+    "location": {
+      "city": "Kelaniya, Gampaha",
+      "region": "",
+      "country": "Sri Lanka"
+    },
+    "sponsors": "Sri Lanka Section; Sri Lanka Section C Chapter; Sri Lanka Section EMB Chapter; Sri Lanka Section IA Chapter; Sri Lanka Section IES Chapter; University of Kelaniya",
+    "url": "/conf/details?id=70081",
+    "isvirtual": "Y",
+    "eventFormat": "hybrid"
+  },
+  {
+    "eventId": 69028,
+    "eventTitle": "2025 IEEE 19th International Conference on Industrial and Information Systems (ICIIS)",
+    "startDate": "2025-12-05",
+    "endDate": "2025-12-06",
+    "about": "Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Fields, Waves and Electromagnetics; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation",
+    "location": {
+      "city": "Peradeniya",
+      "region": "",
+      "country": "Sri Lanka"
+    },
+    "sponsors": "Department of Electrical & Electronic Engineering - University of Peradeniya; Sri Lanka Central Region Subsection; Sri Lanka Section; Sri Lanka Section PES Chapter",
+    "url": "/conf/details?id=69028",
     "isvirtual": "Y",
     "eventFormat": "hybrid"
   }
